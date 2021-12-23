@@ -1,0 +1,8 @@
+with open('2a-input.txt','r') as f:
+    #lines = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263] ## Example
+    lines = f.read().splitlines()
+    print(lines)
+    #inputs = [int(i) for i in lines]
+            
+        
+

@@ -1,0 +1,23 @@
+with open('6a-input.txt','r') as f:
+    
+    #input = [3,4,3,1,2] ## Example
+    
+    input_s = f.read().split(',')
+    input = [int(i) for i in input_s]
+    
+    day = 0
+    while day<81:
+        new_fish=0
+        print("After", day, "days,", len(input), "fishies")
+        for i,n in enumerate(input):
+            if n!=0:
+                input[i] -=1
+            else:
+                input[i] = 6
+                new_fish +=1
+        
+        for i in range(new_fish):
+            input.append(8)
+        day += 1
+        
+                
